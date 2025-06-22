@@ -75,4 +75,6 @@ def chat_interface():
 
     # Export PDF
     if st.button("📤 Export Chat to PDF"):
-        export_chat_as_pdf(st.session_state.chat_history, st.session_state.username)
+        pdf_data, filename = export_chat_as_pdf(st.session_state.chat_history, st.session_state.username)
+        st.download_button("⬇️ Download Chat as PDF", pdf_data, file_name=filename)
+    
