@@ -1,0 +1,5 @@
+streamlit
+fpdf
+PyMuPDF
+beautifulsoup4
+requests
